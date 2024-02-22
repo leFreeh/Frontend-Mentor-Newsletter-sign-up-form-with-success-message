@@ -1,0 +1,155 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(assets/fonts/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(assets/fonts/Roboto-Bold.ttf);
+    font-weight: 700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: Roboto;
+}
+body{
+    padding: calc(1rem + 1.5625vw);
+    background-color:hsl(235, 18%, 26%);
+}
+section{
+    border-radius: 1rem;
+    margin: auto;
+    background-color: hsl(0, 0%, 100%);
+}
+.sign-up{
+    max-width: 1024px;
+    min-width: 375px;
+    padding: 1rem;
+    display: flex; 
+    gap: 1rem;
+}
+.success{
+    max-width: 20rem;
+    display: grid;
+    gap: 2rem;
+    margin: auto;
+    padding: 3rem;
+    display: none;
+}
+.left{
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    gap: 1rem;
+    padding: 2rem 1rem;
+}
+.top{
+    display: grid;
+    gap: 1rem;
+    height: auto;
+}
+ul{
+    list-style: none;
+    padding: 1rem 0;
+    display: grid;
+    gap: 0.5rem;
+}
+li{
+    display: flex;
+    align-items: center;
+}
+.icon{
+    content: url(assets/images/icon-list.svg);
+    padding-right: 1rem;
+}
+.tfs{
+    width: 4rem;
+}
+.bot{
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+    height: fit-content;
+}
+.mail{
+    display: grid;
+    gap: 0.5rem;
+}
+.required{
+    display: flex;
+    justify-content: space-between;
+}
+.ver{
+    color: hsl(4, 100%, 67%);
+    display: none;
+}
+span b{
+    font-size: 0.75rem;
+}
+.buttons{
+    height: 3rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+}  
+.ml{
+    border: 1px solid hsl(231, 7%, 60%);
+    background-color: hsl(0, 0%, 100%);
+}
+.subscribe{
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+}
+.subscribe:hover{
+    background-color: hsl(4, 100%, 67%);
+    box-shadow: 0 0.5rem 1rem hsl(4, 100%, 85%);
+} 
+input{
+    padding-left: 1rem;
+}
+.right{
+    width: 100%;
+    height: auto;
+    max-width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    content: url("assets/images/illustration-sign-up-desktop.svg");
+}
+h1{
+    font-size: 3rem;
+}
+.thk{
+    display: grid;
+    gap: 1rem;
+}
+
+@media screen and (max-width:650px){
+    body{
+        padding: 0;
+        background-color: hsl(0, 0%, 100%);
+    }
+    section{
+        border-radius: 0;
+    }
+    .sign-up{
+        flex-wrap: wrap-reverse;
+    }
+    img{
+        content: url("assets/images/illustration-sign-up-mobile.svg");
+        width: 100%;
+        max-height: 17rem;
+    }
+    .right{
+        max-width:100%;
+    }
+}
